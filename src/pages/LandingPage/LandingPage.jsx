@@ -290,7 +290,7 @@ const LandingPage = () => {
                 bersama!&quot;
               </p>
               <button
-                className="btn btn-danger btn-sm border border-white"
+                className="btn btn-danger btn-sm fw-bold"
                 onClick={openSigninPage}
               >
                 Daftar Sekarang
@@ -299,7 +299,8 @@ const LandingPage = () => {
           </div>
         </div>
 
-        <div className="container mt-3 mb-4">
+<div>
+        <div className="container my-3">
           {Object.keys(groupedProducts).map((kategori) => (
             <div className="row justify-content-center" key={kategori}>
               <h2
@@ -312,7 +313,7 @@ const LandingPage = () => {
               <div className="row row-cols-1 row-cols-md-2 g-2 px-2">
                 {groupedProducts[kategori].length === 0
                   ? defaultProducts.map((product) => (
-                      <div className="col-md-6 m-0 p-0" key={product._id}>
+                      <div className="col-6 col-md-6 m-0 p-0" key={product._id}>
                         <div
                           className="card my-2 m-2"
                           style={{ height: "280px" }}
@@ -358,7 +359,7 @@ const LandingPage = () => {
                                   className="fs-6 ms-1 fw-bold"
                                   style={{ color: "#ea906c" }}
                                 >
-                                  {product.rating || <span>0,0</span>}
+                                  {product.rating || <span>5.0</span>}
                                 </span>
                               </div>
                             </div>
@@ -367,7 +368,7 @@ const LandingPage = () => {
                       </div>
                     ))
                   : groupedProducts[kategori].map((product) => (
-                      <div className="col-md-6 m-0 p-0" key={product._id}>
+                      <div className="col-6 col-md-6 m-0 p-0" key={product._id}>
                         <div
                           className="card my-2 m-2"
                           style={{ height: "280px" }}
@@ -413,7 +414,7 @@ const LandingPage = () => {
                                   className="fs-6 ms-1 fw-bold"
                                   style={{ color: "#ea906c" }}
                                 >
-                                  {product.rating || <span>0,0</span>}
+                                  {product.rating || <span>5.0</span>}
                                 </span>
                               </div>
                             </div>
@@ -424,6 +425,7 @@ const LandingPage = () => {
               </div>
             </div>
           ))}
+        </div>
         </div>
       </div>
     </div>
