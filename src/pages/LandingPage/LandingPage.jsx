@@ -312,7 +312,7 @@ const LandingPage = () => {
               <div className="row row-cols-1 row-cols-md-2 g-2 px-2">
                 {groupedProducts[kategori].length === 0
                   ? defaultProducts.map((product) => (
-                      <div className="col m-0 p-0" key={product._id}>
+                      <div className="col-md-6 m-0 p-0" key={product._id}>
                         <div
                           className="card my-2 m-2"
                           style={{ height: "280px" }}
@@ -367,7 +367,7 @@ const LandingPage = () => {
                       </div>
                     ))
                   : groupedProducts[kategori].map((product) => (
-                      <div className="col m-0 p-0" key={product._id}>
+                      <div className="col-md-6 m-0 p-0" key={product._id}>
                         <div
                           className="card my-2 m-2"
                           style={{ height: "280px" }}
