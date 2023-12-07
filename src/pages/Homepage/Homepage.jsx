@@ -239,7 +239,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="container mt-3 mb-4">
+      <div className="container mt-3 mb-5 pb-3">
         {Object.keys(groupedProducts).map((kategori) => (
           <div className="row justify-content-center" key={kategori}>
             <h2
@@ -251,7 +251,7 @@ const Homepage = () => {
 
             <div className="row row-cols-1 row-cols-md-2 g-2 px-2">
               {groupedProducts[kategori].map((product) => (
-                <div className="col m-0 p-0" key={product._id}>
+                <div className="col-md-6 m-0 p-0" key={product._id}>
                   <Link
                     to={`/homepage/search/produk/detail/${product._id}`}
                     className="text-decoration-none"
