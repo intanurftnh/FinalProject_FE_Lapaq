@@ -95,7 +95,7 @@ const ProductList = () => {
                           className="fs-6 ms-1 fw-bold"
                           style={{ color: "#ea906c" }}
                         >
-                          {product.rating || <p className="mb-0">5,0</p>}
+                          {product.rating || <p className="mb-0">5.0</p>}
                         </span>
                       </div>
                     </div>

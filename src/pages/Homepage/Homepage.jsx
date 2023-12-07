@@ -239,81 +239,83 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="container mt-3 mb-5 pb-3">
-        {Object.keys(groupedProducts).map((kategori) => (
-          <div className="row justify-content-center" key={kategori}>
-            <h2
-              className="ms-2 mt-4 mb-0 fs-5 fw-semibold"
-              style={{ color: "#2B2A4C" }}
-            >
-              {kategori}
-            </h2>
+      <div>
+        <div className="container my-3 pb-3">
+          {Object.keys(groupedProducts).map((kategori) => (
+            <div className="row justify-content-center" key={kategori}>
+              <h2
+                className="ms-2 mt-4 mb-0 fs-5 fw-semibold"
+                style={{ color: "#2B2A4C" }}
+              >
+                {kategori}
+              </h2>
 
-            <div className="row row-cols-1 row-cols-md-2 g-2 px-2">
-              {groupedProducts[kategori].map((product) => (
-                <div className="col-md-6 m-0 p-0" key={product._id}>
-                  <Link
-                    to={`/homepage/search/produk/detail/${product._id}`}
-                    className="text-decoration-none"
-                  >
-                    <div
-                      className="card my-2 m-2"
-                      key={product._id}
-                      style={{ height: "280px" }}
+              <div className="row row-cols-1 row-cols-md-2 g-2 px-2">
+                {groupedProducts[kategori].map((product) => (
+                  <div className="col-6 col-md-6 m-0 p-0" key={product._id}>
+                    <Link
+                      to={`/homepage/search/produk/detail/${product._id}`}
+                      className="text-decoration-none"
                     >
-                      <img
-                        src={product.image || defaultImageUrl}
-                        alt={product.nama_produk}
-                        className="card-img-top"
-                        style={{ objectFit: "cover" }}
-                        width="120px"
-                      />
-                      <div className="card-body">
-                        <h5
-                          style={{ fontSize: "14px" }}
-                          className="card-title fw-semibold"
-                        >
-                          {product.nama_produk}
-                        </h5>
-                        <p
-                          className="card-text fw-bold"
-                          style={{ color: "#2B2A4C", fontSize: "14px" }}
-                        >
-                          <span>Rp </span>
-                          {product.harga}
-                        </p>
-                        <div
-                          className="rating ms-1"
-                          style={{
-                            position: "absolute",
-                            bottom: "10px",
-                            left: "10px",
-                            right: "10px",
-                          }}
-                        >
-                          <div className="d-flex align-items-center">
-                            <Icon
-                              icon="tabler:star-filled"
-                              color="#ea906c"
-                              width="20"
-                              height="20"
-                            />
-                            <span
-                              className="fs-6 ms-1 fw-bold"
-                              style={{ color: "#ea906c" }}
-                            >
-                              {product.rating || <span>5,0</span>}
-                            </span>
+                      <div
+                        className="card my-2 m-2"
+                        key={product._id}
+                        style={{ height: "280px" }}
+                      >
+                        <img
+                          src={product.image || defaultImageUrl}
+                          alt={product.nama_produk}
+                          className="card-img-top"
+                          style={{ objectFit: "cover" }}
+                          width="120px"
+                        />
+                        <div className="card-body">
+                          <h5
+                            style={{ fontSize: "14px" }}
+                            className="card-title fw-semibold"
+                          >
+                            {product.nama_produk}
+                          </h5>
+                          <p
+                            className="card-text fw-bold"
+                            style={{ color: "#2B2A4C", fontSize: "14px" }}
+                          >
+                            <span>Rp </span>
+                            {product.harga}
+                          </p>
+                          <div
+                            className="rating ms-1"
+                            style={{
+                              position: "absolute",
+                              bottom: "10px",
+                              left: "10px",
+                              right: "10px",
+                            }}
+                          >
+                            <div className="d-flex align-items-center">
+                              <Icon
+                                icon="tabler:star-filled"
+                                color="#ea906c"
+                                width="20"
+                                height="20"
+                              />
+                              <span
+                                className="fs-6 ms-1 fw-bold"
+                                style={{ color: "#ea906c" }}
+                              >
+                                {product.rating || <span>5.0</span>}
+                              </span>
+                            </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </Link>
-                </div>
-              ))}
+                    </Link>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );
