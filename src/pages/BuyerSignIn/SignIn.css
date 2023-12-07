@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+body {
+    /*box-sizing: border-box;*/
+    font-family: 'montserrat', sans-serif;
+    /*background-color: rgb(244, 244, 244);*/
+}
+
+/*.container {
+    background: white;
+    width: 390px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}*/
+.form-login {
+    /*height: 46%;
+    width: 100%;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.form-login form {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-login form .username,
+.form-login form .password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    /* padding: 3% 0; */
+    margin: 3% 0;
+    border: solid 1px black;
+    border-radius: 15px;
+    text-align: center;
+}
+.form-login form #username,
+.form-login form #password {
+    width: 100%;
+    padding: 3% 0;
+    border-radius: 0 15px 15px 0;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+    filter: opacity(0.6);
+    font-size: small;
+} 
+.form-login form .bi {
+    margin: 0 2%;
+}
+.form-login #login {
+    width: 100%;
+    padding-left: 10%;
+    text-align: start;
+    color: #B31312;
+    font-size: 25px;
+    font-weight: bold;
+}
+.cta {
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.cta  input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
+.cta #lupa-sandi {
+    width: 122px;
+    height: 26px;
+    border-radius: 5px;
+    border: none;
+    background: #B31312;
+    cursor: pointer;
+}
+.cta #lupa-sandi:hover {
+    background-color: #890606;
+}
+.cta #lupa-sandi a {
+    color: aliceblue;
+    text-decoration: none;
+}
+.cta #lupa-sandi, 
+.cta .cta-ingat-saya {
+    margin: 0 9%;
+}
+.logo {
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img {
+    width: 128px;
+    height: auto;
+}
+#btn-login {
+    width: 80%;
+    padding: 3%;
+    border-radius: 10px;
+    border: none;
+    background: #B31312;
+    color: white;
+    margin-top: 20px;
+}
+#btn-login:hover {
+    background-color: #890606;
+}
+/*.saran {
+    height: auto;
+    width: 100%;
+    background: rgb(133, 112, 112); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}*/
+.saran span {
+    /*margin-top: 80px;
+    position: relative;
+    margin-bottom: 5%;*/
+    left: 0px;
+}
+.saran span a {
+    color: #0093ED;
+    text-decoration: none;
+}
