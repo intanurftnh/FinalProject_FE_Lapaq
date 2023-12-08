@@ -326,14 +326,14 @@ const SignUp = () => {
             </div>
 
             <button type="submit" id="submit">
-              Register
+              Sign Up
             </button>
           </form>
         </div>
 
-        <div className="saran mb-5">
-          <span>
-            Sudah punya akun? <Link to="/welcome/sign-in">Log In</Link>
+        <div className="saran mb-5 me-0">
+          <span className="m-0">
+            Sudah punya akun? <Link to="/welcome/sign-in" className="m-0">Log In</Link>
           </span>
         </div>
       </div>

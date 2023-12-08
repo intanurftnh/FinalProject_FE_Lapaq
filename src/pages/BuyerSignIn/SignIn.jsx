@@ -175,13 +175,13 @@ const SignIn = () => {
             </div>
             */}
             <button type="submit" id="btn-login" className="mt-5">
-              LOG IN
+              Log In
             </button>
           </form>
         </div>
-        <div className="saran">
-          <span>
-            Belum punya akun? <Link to="/welcome/sign-up">Daftar</Link>
+        <div className="saran me-0">
+          <span className="m-0">
+            Belum punya akun? <Link to="/welcome/sign-up" className="m-0">Sign Up</Link>
           </span>
         </div>
       </div>
