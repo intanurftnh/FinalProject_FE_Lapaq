@@ -123,7 +123,7 @@ const OrderReturn = () => {
         style={{
           display: activeFilter === "Proses" ? "block" : "none",
           border: "1px solid #2b2a4c",
-          width: "340px",
+          width: "92%",
         }}
       >
         <div className="row g-2 px-2">
@@ -134,7 +134,7 @@ const OrderReturn = () => {
               style={{ boxShadow: "0 3px 2px rgba(0, 0, 0, 0.1)" }}
             >
               <div className="row g-0 d-flex align-items-center">
-                <div className="col-md-2 d-flex align-items-center">
+                <div className="col-2 col-md-2 d-flex align-items-center">
                   <img
                     src={product.image || defaultImageUrl}
                     alt={product.nama_produk}
@@ -142,7 +142,7 @@ const OrderReturn = () => {
                     style={{ height: "60px", width: "60px" }}
                   />
                 </div>
-                <div className="col-md-10">
+                <div className="col-10 col-md-10">
                   <div className="card-body d-flex justify-content-between align-items-center p-0 ps-3">
                     <div>
                       <h5
@@ -187,7 +187,7 @@ const OrderReturn = () => {
         style={{
           display: activeFilter === "selesai" ? "block" : "none",
           border: "1px solid #2b2a4c",
-          width: "340px",
+          width: "92%",
         }}
       >
         <div className="row g-2 px-2">
@@ -202,7 +202,7 @@ const OrderReturn = () => {
                 className="text-decoration-none"
               >
                 <div className="row g-0 d-flex align-items-center">
-                  <div className="col-md-2 d-flex align-items-center">
+                  <div className="col-2 col-md-2 d-flex align-items-center">
                     <img
                       src={product.image || defaultImageUrl}
                       alt={product.nama_produk}
@@ -210,7 +210,7 @@ const OrderReturn = () => {
                       style={{ height: "60px", width: "60px" }}
                     />
                   </div>
-                  <div className="col-md-10">
+                  <div className="col-10 col-md-10">
                     <div className="card-body d-flex justify-content-between align-items-center p-0 ps-3">
                       <div>
                         <h5
