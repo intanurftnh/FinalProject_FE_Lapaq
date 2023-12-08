@@ -79,10 +79,7 @@ function Checkout() {
   };
 
   return (
-    <div
-      className="body d-flex justify-content-center align-items-center"
-      style={{ backgroundColor: "#B31312", height: "100vh" }}
-    >
+      <div>
       <div
         className="container d-flex flex-column justify-content-between px-4"
         style={{
@@ -90,7 +87,7 @@ function Checkout() {
           backgroundColor: "white",
           height: "100%",
           paddingTop: "1vh",
-          paddingBottom: "10vh",
+          paddingBottom: "5vh",
         }}
       >
         <div className="pt-4">
@@ -183,11 +180,11 @@ function Checkout() {
           </div>
         </div>
 
-        <div className="d-flex justify-content-between align-items-center container-md m-0 px-0">
+        <div className="d-flex justify-content-between align-items-center container-md m-0 p-0">
           <div className="align-items-center">
             <p className="fw-bolder mb-0">Ongkos Kirim</p>
           </div>
-          <div id="ongkir" className="align-items-center fw-bold">
+          <div id="ongkir" className="align-items-center fw-bold m-0 p-0">
             Rp 10000
           </div>
         </div>
@@ -303,7 +300,7 @@ function Checkout() {
           </button>
         </div>
       </div>
-    </div>
+      </div>
   );
 }
 

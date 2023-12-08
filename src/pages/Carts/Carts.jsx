@@ -61,7 +61,7 @@ const Carts = () => {
               style={{ boxShadow: "0 3px 2px rgba(0, 0, 0, 0.1)" }}
             >
               <div className="row g-0 d-flex align-items-center">
-                <div className="col-md-2 d-flex align-items-center">
+                <div className="col-2 col-md-2 d-flex align-items-center">
                   <img
                     src={product.image || defaultImageUrl}
                     alt={product.nama_produk}
@@ -69,7 +69,7 @@ const Carts = () => {
                     style={{ height: "60px", width: "60px" }}
                   />
                 </div>
-                <div className="col-md-10">
+                <div className="col-10 col-md-10">
                   <div className="card-body d-flex justify-content-between align-items-center p-0 ps-3">
                     <div>
                       <h5
