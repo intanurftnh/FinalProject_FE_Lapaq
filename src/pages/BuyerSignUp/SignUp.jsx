@@ -325,15 +325,15 @@ const SignUp = () => {
               </div>
             </div>
 
-            <button type="submit" id="submit">
-              Register
+            <button className="btn fw-bold" type="submit" id="submit">
+              Sign Up
             </button>
           </form>
         </div>
 
-        <div className="saran mb-5">
-          <span>
-            Sudah punya akun? <Link to="/welcome/sign-in">Log In</Link>
+        <div className="saran mb-5 me-0">
+          <span className="m-0">
+            Sudah punya akun? <Link to="/welcome/sign-in" className="m-0">Sign In</Link>
           </span>
         </div>
       </div>

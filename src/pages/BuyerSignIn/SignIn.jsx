@@ -114,7 +114,7 @@ const SignIn = () => {
           <img src="https://i.imgur.com/OXNQ3Sf.png" alt="logo lapaq" />
         </div>
         <div className="form-login">
-          <h3 id="login">Log In</h3>
+          <h3 id="login">Sign In</h3>
           <form
             action="/login"
             method="post"
@@ -174,14 +174,14 @@ const SignIn = () => {
               </button>
             </div>
             */}
-            <button type="submit" id="btn-login" className="mt-5">
-              LOG IN
+            <button type="submit" id="btn-login" className="mt-5 btn fw-bold">
+              Sign In
             </button>
           </form>
         </div>
-        <div className="saran">
-          <span>
-            Belum punya akun? <Link to="/welcome/sign-up">Daftar</Link>
+        <div className="saran me-0">
+          <span className="m-0">
+            Belum punya akun? <Link to="/welcome/sign-up" className="m-0">Sign Up</Link>
           </span>
         </div>
       </div>
