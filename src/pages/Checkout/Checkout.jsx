@@ -79,7 +79,7 @@ function Checkout() {
   };
 
   return (
-      <div>
+    <div>
       <div
         className="container d-flex flex-column justify-content-between px-4"
         style={{
@@ -300,7 +300,7 @@ function Checkout() {
           </button>
         </div>
       </div>
-      </div>
+    </div>
   );
 }
 
